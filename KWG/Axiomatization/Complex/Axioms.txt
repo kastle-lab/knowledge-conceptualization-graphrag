@@ -1,0 +1,223 @@
+'administrative level' only 'Administrative Level' SubClassOf 'Public Health Department'
+
+'has chief judge' only 'Chief Judge' SubClassOf JudegeInfo
+
+'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'
+
+'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'
+'corresponding map ID' some xsd:string SubClassOf 'MTBS Fire'
+'has mtbs fire name' some xsd:string SubClassOf 'MTBS Fire'
+
+'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'
+'has incident name' only xsd:string SubClassOf 'NIFC Fire'
+
+'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'
+'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'
+'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'
+
+'kwg - has geometry' only 'Geometry Collection' SubClassOf 'Soil Map Unit'
+
+'has storm track' some 'Storm Track' SubClassOf 'NOAA Hazard'
+'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'
+
+'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'
+
+'has declaration' only 'FEMA Declaration' SubClassOf 'Disaster from FEMA'
+'county FIPS code' some xsd:string SubClassOf 'FEMA Declaration'
+'state FIPS code' some xsd:string SubClassOf 'FEMA Declaration'
+'has declaration ID' some xsd:string SubClassOf 'FEMA Declaration'
+
+'has declaration' only 'FEMA Declaration' SubClassOf 'Disaster from FEMA'
+'has program' only Program SubClassOf 'Disaster from FEMA'
+
+'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'
+'corresponding map ID' some xsd:string SubClassOf 'MTBS Fire'
+'has mtbs fire name' some xsd:string SubClassOf 'MTBS Fire'
+
+'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'
+'has incident name' only xsd:string SubClassOf 'NIFC Fire'
+
+'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'
+'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'
+'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'
+
+'helipad availability' only 'Helipad Availability' SubClassOf Hospital
+
+'hospital status' only 'Hospital Status' SubClassOf Hospital
+
+'hospital type' only 'Hospital Type' SubClassOf Hospital
+
+'nominated by' some 'US President' SubClassOf JudegeInfo
+'nominated time' some 'Temporal entity' SubClassOf JudegeInfo
+'has chief judge' only 'Chief Judge' SubClassOf JudegeInfo
+'has judge info' only JudegeInfo SubClassOf 'Federal Judicial District'
+
+'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'
+'census area code' some xsd:string SubClassOf 'Legal/Statistical Area Description (LSAD)'
+
+'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'
+'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'
+'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'
+
+'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'
+
+'has mapping program' only 'MTBS Mapping Label' SubClassOf 'MTBS Fire Observation Collection'
+
+'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'
+
+'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'
+'has storm track' some 'Storm Track' SubClassOf 'NOAA Hazard'
+
+'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'
+'has hazard narrative' some xsd:string SubClassOf 'NOAA Hazard Episode'
+
+'road segment starts from' some 'NOAA Hazard Fix' SubClassOf 'NOAA Hazard Event Segment'
+'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'
+
+'road segment starts from' some 'NOAA Hazard Fix' SubClassOf 'NOAA Hazard Event Segment'
+'has azimuth' some xsd:string SubClassOf 'NOAA Hazard Fix'
+'has range' some xsd:string SubClassOf 'NOAA Hazard Fix'
+
+'composite drought zone percentage information' only xsd:string SubClassOf 'Drought Zone Overlap Observation Collection'
+
+'has mapping program' only 'MTBS Mapping Label' SubClassOf 'MTBS Fire Observation Collection'
+
+'has map unit area symbol' only xsd:string SubClassOf 'Soil Map Unit Observation Collection'
+'has soil map unit key' only xsd:string SubClassOf 'Soil Map Unit Observation Collection'
+'has soil map unit symbol' only xsd:string SubClassOf 'Soil Map Unit Observation Collection'
+
+'pharmacy type' only 'Pharmacy Type' SubClassOf Pharmacy
+
+'cbsa code' only xsd:string SubClassOf 'EPA Air Quality Site'
+'cbsa name' only xsd:string SubClassOf 'EPA Air Quality Site'
+'site ID' only xsd:string SubClassOf 'EPA Air Quality Site'
+'site name' only xsd:string SubClassOf 'EPA Air Quality Site'
+
+'has program' only Program SubClassOf 'Disaster from FEMA'
+'has program ID' only xsd:string SubClassOf Program
+
+mean only Quantity SubClassOf 'Climate DIvision Observation Result'
+
+'has judge info' only JudegeInfo SubClassOf 'Federal Judicial District'
+'in circuit' only 'Regional Circuit' SubClassOf 'Federal Judicial District'
+'nominated by' only 'US President' SubClassOf 'Federal Judicial District'
+'nominated time' only 'Temporal entity' SubClassOf 'Federal Judicial District'
+'has federal judicial district name' some xsd:string SubClassOf 'Federal Judicial District'
+'has abbreviation' only xsd:string SubClassOf 'Federal Judicial District'
+
+'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'
+
+'zone number' only xsd:string SubClassOf 'National Weather Zone'
+
+'nielsen market zone DMA' only xsd:int SubClassOf 'Nielsen Market Zone'
+'nielsen market zone HHTV' only xsd:int SubClassOf 'Nielsen Market Zone'
+'nielsen market zone ID' only xsd:double SubClassOf 'Nielsen Market Zone'
+'nielsen market zone PUSA' only xsd:string SubClassOf 'Nielsen Market Zone'
+'nielsen market zone rank' only xsd:int SubClassOf 'Nielsen Market Zone'
+
+'has zip code' only xsd:string SubClassOf 'Zip Code Area'
+
+'in circuit' only 'Regional Circuit' SubClassOf 'Federal Judicial District'
+
+mean only Quantity SubClassOf 'Climate DIvision Observation Result'
+anomaly only xsd:decimal SubClassOf 'Climate DIvision Observation Result'
+rank only xsd:integer SubClassOf 'Climate DIvision Observation Result'
+
+'has road type' only 'Road Type' SubClassOf 'Road Segment'
+
+'poc value' only xsd:string SubClassOf 'EPA Air Quality Instrument/Sensor'
+
+'has geometry member' some Feature SubClassOf 'Geometry Collection'
+
+'has declaration' only 'FEMA Declaration' SubClassOf 'Disaster from FEMA'
+'has program' only Program SubClassOf 'Disaster from FEMA'
+
+'has judge info' only JudegeInfo SubClassOf 'Federal Judicial District'
+'in circuit' only 'Regional Circuit' SubClassOf 'Federal Judicial District'
+'nominated by' only 'US President' SubClassOf 'Federal Judicial District'
+'nominated time' only 'Temporal entity' SubClassOf 'Federal Judicial District'
+'has federal judicial district name' some xsd:string SubClassOf 'Federal Judicial District'
+'has abbreviation' only xsd:string SubClassOf 'Federal Judicial District'
+
+'helipad availability' only 'Helipad Availability' SubClassOf Hospital
+'hospital status' only 'Hospital Status' SubClassOf Hospital
+'hospital type' only 'Hospital Type' SubClassOf Hospital
+hospitalAddress only xsd:string SubClassOf Hospital
+'hospital name' only xsd:string SubClassOf Hospital
+'no of hospital beds' only xsd:decimal SubClassOf Hospital
+'telephone no' only xsd:string SubClassOf Hospital
+website only xsd:string SubClassOf Hospital
+'zip code' only xsd:integer SubClassOf Hospital
+
+'trauma care level' some 'Trauma Care Level' SubClassOf 'Trauma Center'
+
+'pharmacy type' only 'Pharmacy Type' SubClassOf Pharmacy
+address only xsd:string SubClassOf Pharmacy
+'pharmacy name' only xsd:string SubClassOf Pharmacy
+'telephone no' only xsd:string SubClassOf Pharmacy
+'zip code' only xsd:integer SubClassOf Pharmacy
+
+'administrative level' only 'Administrative Level' SubClassOf 'Public Health Department'
+address only xsd:string SubClassOf 'Public Health Department'
+'public health department name' only xsd:string SubClassOf 'Public Health Department'
+'telephone no' only xsd:string SubClassOf 'Public Health Department'
+'zip code' only xsd:integer SubClassOf 'Public Health Department'
+
+'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'
+
+'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'
+'corresponding map ID' some xsd:string SubClassOf 'MTBS Fire'
+'has mtbs fire name' some xsd:string SubClassOf 'MTBS Fire'
+
+'zone number' only xsd:string SubClassOf 'National Weather Zone'
+
+'nielsen market zone DMA' only xsd:int SubClassOf 'Nielsen Market Zone'
+'nielsen market zone HHTV' only xsd:int SubClassOf 'Nielsen Market Zone'
+'nielsen market zone ID' only xsd:double SubClassOf 'Nielsen Market Zone'
+'nielsen market zone PUSA' only xsd:string SubClassOf 'Nielsen Market Zone'
+'nielsen market zone rank' only xsd:int SubClassOf 'Nielsen Market Zone'
+
+'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'
+'has incident name' only xsd:string SubClassOf 'NIFC Fire'
+
+'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'
+'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'
+'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'
+
+'hazard ends at' only 'Road Segment Node' SubClassOf 'Road Segment'
+'has road type' only 'Road Type' SubClassOf 'Road Segment'
+'road segment starts from' only 'Road Segment Node' SubClassOf 'Road Segment'
+'road length' only xsd:decimal SubClassOf 'Road Segment'
+'has road name' only xsd:string SubClassOf 'Road Segment'
+'has road sign' only xsd:string SubClassOf 'Road Segment'
+
+'hazard ends at' only 'Road Segment Node' SubClassOf 'Road Segment'
+'road segment starts from' only 'Road Segment Node' SubClassOf 'Road Segment'
+
+'kwg - has geometry' only 'Geometry Collection' SubClassOf 'Soil Map Unit'
+
+'has storm track' some 'Storm Track' SubClassOf 'NOAA Hazard'
+'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'
+
+'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'
+
+'has zip code' only xsd:string SubClassOf 'Zip Code Area'
+
+'has geometry member' some Feature SubClassOf 'Geometry Collection'
+'kwg - has geometry' only 'Geometry Collection' SubClassOf 'Soil Map Unit'
+
+'nominated time' some 'Temporal entity' SubClassOf JudegeInfo
+'nominated time' only 'Temporal entity' SubClassOf 'Federal Judicial District'
+
+'trauma description source date' only 'Time instant' SubClassOf 'Trauma Description'
+
+'trauma care level' some 'Trauma Care Level' SubClassOf 'Trauma Center'
+'has trauma description' only 'Trauma Description' SubClassOf 'Trauma Care Level'
+
+'has trauma description' only 'Trauma Description' SubClassOf 'Trauma Care Level'
+'trauma description source date' only 'Time instant' SubClassOf 'Trauma Description'
+'trauma description for state' only xsd:string SubClassOf 'Trauma Description'
+'trauma description source' only xsd:string SubClassOf 'Trauma Description'
+
+'nominated by' some 'US President' SubClassOf JudegeInfo
+'nominated by' only 'US President' SubClassOf 'Federal Judicial District'
