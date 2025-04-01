@@ -5,226 +5,226 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 'administrative level' only 'Administrative Level' SubClassOf 'Public Health Department'\
+\f0\fs24 \cf0 administrativeLevel only AdministrativeLevel SubClassOf PublicHealthDepartment\
 \
-'has chief judge' only 'Chief Judge' SubClassOf JudegeInfo\
+hasChiefJudge only ChiefJudge SubClassOf JudegeInfo\
 \
-'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'\
+hasDeclaration only Declaration SubClassOf FEMADisaster\
+fipsCountyCode some xsd:string SubClassOf Declaration\
+fipsStateCode some xsd:string SubClassOf Declaration\
+hasDeclarationID some xsd:string SubClassOf Declaration\
 \
-'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'\
-'corresponding map ID' some xsd:string SubClassOf 'MTBS Fire'\
-'has mtbs fire name' some xsd:string SubClassOf 'MTBS Fire'\
+startsFrom some Fix SubClassOf EventSegment\
+hasSegment only EventSegment SubClassOf NOAAHazardEvent\
 \
-'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'\
-'has incident name' only xsd:string SubClassOf 'NIFC Fire'\
+hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire\
+correspondingMapID some xsd:string SubClassOf MTBSFire\
+hasFireName some xsd:string SubClassOf MTBSFire\
 \
-'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'\
-'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'\
-'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'\
+hasFireCause only FireCause SubClassOf NIFCFire\
+hasIncidentName only xsd:string SubClassOf NIFCFire\
 \
-'kwg - has geometry' only 'Geometry Collection' SubClassOf 'Soil Map Unit'\
+episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode\
+hasPart some NOAAHazardEvent SubClassOf NOAAHazard\
+hasSegment only EventSegment SubClassOf NOAAHazardEvent\
 \
-'has storm track' some 'Storm Track' SubClassOf 'NOAA Hazard'\
-'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'\
+hasGeometry only GeometryCollection SubClassOf SoilMapUnit\
 \
-'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'\
+hasStormTrack some StormTrack SubClassOf NOAAHazard\
+hasStormTracklet only StormTracklet SubClassOf StormTrack\
 \
-'has declaration' only 'FEMA Declaration' SubClassOf 'Disaster from FEMA'\
-'county FIPS code' some xsd:string SubClassOf 'FEMA Declaration'\
-'state FIPS code' some xsd:string SubClassOf 'FEMA Declaration'\
-'has declaration ID' some xsd:string SubClassOf 'FEMA Declaration'\
+hasStormTracklet only StormTracklet SubClassOf StormTrack\
 \
-'has declaration' only 'FEMA Declaration' SubClassOf 'Disaster from FEMA'\
-'has program' only Program SubClassOf 'Disaster from FEMA'\
+typeOfLSAD only LSADArea SubClassOf USCensusMSA\
 \
-'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'\
-'corresponding map ID' some xsd:string SubClassOf 'MTBS Fire'\
-'has mtbs fire name' some xsd:string SubClassOf 'MTBS Fire'\
+hasFireCause only FireCause SubClassOf NIFCFire\
 \
-'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'\
-'has incident name' only xsd:string SubClassOf 'NIFC Fire'\
+hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire\
 \
-'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'\
-'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'\
-'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'\
+startsFrom some Fix SubClassOf EventSegment\
+hasAzimuth some xsd:string SubClassOf Fix\
+hasRange some xsd:string SubClassOf Fix\
 \
-'helipad availability' only 'Helipad Availability' SubClassOf Hospital\
+hasDeclaration only Declaration SubClassOf FEMADisaster\
+hasProgram only Program SubClassOf FEMADisaster\
 \
-'hospital status' only 'Hospital Status' SubClassOf Hospital\
+hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire\
+correspondingMapID some xsd:string SubClassOf MTBSFire\
+hasFireName some xsd:string SubClassOf MTBSFire\
 \
-'hospital type' only 'Hospital Type' SubClassOf Hospital\
+hasFireCause only FireCause SubClassOf NIFCFire\
+hasIncidentName only xsd:string SubClassOf NIFCFire\
 \
-'nominated by' some 'US President' SubClassOf JudegeInfo\
-'nominated time' some 'Temporal entity' SubClassOf JudegeInfo\
-'has chief judge' only 'Chief Judge' SubClassOf JudegeInfo\
-'has judge info' only JudegeInfo SubClassOf 'Federal Judicial District'\
+episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode\
+hasPart some NOAAHazardEvent SubClassOf NOAAHazard\
+hasSegment only EventSegment SubClassOf NOAAHazardEvent\
 \
-'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'\
-'census area code' some xsd:string SubClassOf 'Legal/Statistical Area Description (LSAD)'\
+episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode\
+hasNarrative some xsd:string SubClassOf HazardEpisode\
 \
-'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'\
-'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'\
-'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'\
+helipadAvailability only HelipadAvailability SubClassOf Hospital\
 \
-'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'\
+hospitalStatus only HospitalStatus SubClassOf Hospital\
 \
-'has mapping program' only 'MTBS Mapping Label' SubClassOf 'MTBS Fire Observation Collection'\
+hospitalType only HospitalType SubClassOf Hospital\
 \
-'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'\
+nominatedBy some USPresident SubClassOf JudegeInfo\
+nominatedTime some time:TemporalEntity SubClassOf JudegeInfo\
+hasChiefJudge only ChiefJudge SubClassOf JudegeInfo\
+hasJudgeInfo only JudegeInfo SubClassOf FederalJudicalDistrict\
 \
-'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'\
-'has storm track' some 'Storm Track' SubClassOf 'NOAA Hazard'\
+typeOfLSAD only LSADArea SubClassOf USCensusMSA\
+hasCode some xsd:string SubClassOf LSADArea\
 \
-'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'\
-'has hazard narrative' some xsd:string SubClassOf 'NOAA Hazard Episode'\
+hasMappingProgram only MappingProgram SubClassOf MTBSFireObservationCollection\
 \
-'road segment starts from' some 'NOAA Hazard Fix' SubClassOf 'NOAA Hazard Event Segment'\
-'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'\
+episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode\
+hasPart some NOAAHazardEvent SubClassOf NOAAHazard\
+hasSegment only EventSegment SubClassOf NOAAHazardEvent\
 \
-'road segment starts from' some 'NOAA Hazard Fix' SubClassOf 'NOAA Hazard Event Segment'\
-'has azimuth' some xsd:string SubClassOf 'NOAA Hazard Fix'\
-'has range' some xsd:string SubClassOf 'NOAA Hazard Fix'\
+hasPart some NOAAHazardEvent SubClassOf NOAAHazard\
+hasStormTrack some StormTrack SubClassOf NOAAHazard\
 \
-'composite drought zone percentage information' only xsd:string SubClassOf 'Drought Zone Overlap Observation Collection'\
+compositePercentageInformation only xsd:string SubClassOf DroughtZoneOverlapObservationCollection\
 \
-'has mapping program' only 'MTBS Mapping Label' SubClassOf 'MTBS Fire Observation Collection'\
+hasMappingProgram only MappingProgram SubClassOf MTBSFireObservationCollection\
 \
-'has map unit area symbol' only xsd:string SubClassOf 'Soil Map Unit Observation Collection'\
-'has soil map unit key' only xsd:string SubClassOf 'Soil Map Unit Observation Collection'\
-'has soil map unit symbol' only xsd:string SubClassOf 'Soil Map Unit Observation Collection'\
+hasMapUnitAreaSymbol only xsd:string SubClassOf SoilMapUnitObservationCollection\
+hasSoilMapUnitKey only xsd:string SubClassOf SoilMapUnitObservationCollection\
+hasSoilMapUnitSymbol only xsd:string SubClassOf SoilMapUnitObservationCollection\
 \
-'pharmacy type' only 'Pharmacy Type' SubClassOf Pharmacy\
+pharmacyType only PharmacyType SubClassOf Pharmacy\
 \
-'cbsa code' only xsd:string SubClassOf 'EPA Air Quality Site'\
-'cbsa name' only xsd:string SubClassOf 'EPA Air Quality Site'\
-'site ID' only xsd:string SubClassOf 'EPA Air Quality Site'\
-'site name' only xsd:string SubClassOf 'EPA Air Quality Site'\
+cbsaCode only xsd:string SubClassOf AirQualitySite\
+cbsaName only xsd:string SubClassOf AirQualitySite\
+siteID only xsd:string SubClassOf AirQualitySite\
+siteName only xsd:string SubClassOf AirQualitySite\
 \
-'has program' only Program SubClassOf 'Disaster from FEMA'\
-'has program ID' only xsd:string SubClassOf Program\
+hasProgram only Program SubClassOf FEMADisaster\
+hasProgramID only xsd:string SubClassOf Program\
 \
-mean only Quantity SubClassOf 'Climate DIvision Observation Result'\
+mean only Quantity SubClassOf ClimateDivisionObservationResult\
 \
-'has judge info' only JudegeInfo SubClassOf 'Federal Judicial District'\
-'in circuit' only 'Regional Circuit' SubClassOf 'Federal Judicial District'\
-'nominated by' only 'US President' SubClassOf 'Federal Judicial District'\
-'nominated time' only 'Temporal entity' SubClassOf 'Federal Judicial District'\
-'has federal judicial district name' some xsd:string SubClassOf 'Federal Judicial District'\
-'has abbreviation' only xsd:string SubClassOf 'Federal Judicial District'\
+hasJudgeInfo only JudegeInfo SubClassOf FederalJudicalDistrict\
+inCircuit only RegionalCircuit SubClassOf FederalJudicalDistrict\
+nominatedBy only USPresident SubClassOf FederalJudicalDistrict\
+nominatedTime only time:TemporalEntity SubClassOf FederalJudicalDistrict\
+hasName some xsd:string SubClassOf FederalJudicalDistrict\
+hasABBR only xsd:string SubClassOf FederalJudicalDistrict\
 \
-'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'\
+nielsenMarketZoneDMA only xsd:int SubClassOf NielsenMarketZone\
+nielsenMarketZoneHHTV only xsd:int SubClassOf NielsenMarketZone\
+nielsenMarketZoneID only xsd:double SubClassOf NielsenMarketZone\
+nielsenMarketZonePUSA only xsd:string SubClassOf NielsenMarketZone\
+nielsenMarketZoneRank only xsd:int SubClassOf NielsenMarketZone\
 \
-'zone number' only xsd:string SubClassOf 'National Weather Zone'\
+zoneNumber only xsd:string SubClassOf NWZone\
 \
-'nielsen market zone DMA' only xsd:int SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone HHTV' only xsd:int SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone ID' only xsd:double SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone PUSA' only xsd:string SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone rank' only xsd:int SubClassOf 'Nielsen Market Zone'\
+typeOfLSAD only LSADArea SubClassOf USCensusMSA\
 \
-'has zip code' only xsd:string SubClassOf 'Zip Code Area'\
+hasZipCode only xsd:string SubClassOf ZipCodeArea\
 \
-'in circuit' only 'Regional Circuit' SubClassOf 'Federal Judicial District'\
+inCircuit only RegionalCircuit SubClassOf FederalJudicalDistrict\
 \
-mean only Quantity SubClassOf 'Climate DIvision Observation Result'\
-anomaly only xsd:decimal SubClassOf 'Climate DIvision Observation Result'\
-rank only xsd:integer SubClassOf 'Climate DIvision Observation Result'\
+mean only Quantity SubClassOf ClimateDivisionObservationResult\
+anomaly only xsd:decimal SubClassOf ClimateDivisionObservationResult\
+rank only xsd:integer SubClassOf ClimateDivisionObservationResult\
 \
-'has road type' only 'Road Type' SubClassOf 'Road Segment'\
+hasRoadType only RoadType SubClassOf RoadSegment\
 \
-'poc value' only xsd:string SubClassOf 'EPA Air Quality Instrument/Sensor'\
+pocValue only xsd:string SubClassOf AirQualityInstrument\
 \
-'has geometry member' some Feature SubClassOf 'Geometry Collection'\
+hasGeometryMember some Feature SubClassOf GeometryCollection\
 \
-'has declaration' only 'FEMA Declaration' SubClassOf 'Disaster from FEMA'\
-'has program' only Program SubClassOf 'Disaster from FEMA'\
+hasJudgeInfo only JudegeInfo SubClassOf FederalJudicalDistrict\
+inCircuit only RegionalCircuit SubClassOf FederalJudicalDistrict\
+nominatedBy only USPresident SubClassOf FederalJudicalDistrict\
+nominatedTime only time:TemporalEntity SubClassOf FederalJudicalDistrict\
+hasName some xsd:string SubClassOf FederalJudicalDistrict\
+hasABBR only xsd:string SubClassOf FederalJudicalDistrict\
 \
-'has judge info' only JudegeInfo SubClassOf 'Federal Judicial District'\
-'in circuit' only 'Regional Circuit' SubClassOf 'Federal Judicial District'\
-'nominated by' only 'US President' SubClassOf 'Federal Judicial District'\
-'nominated time' only 'Temporal entity' SubClassOf 'Federal Judicial District'\
-'has federal judicial district name' some xsd:string SubClassOf 'Federal Judicial District'\
-'has abbreviation' only xsd:string SubClassOf 'Federal Judicial District'\
+hasDeclaration only Declaration SubClassOf FEMADisaster\
+hasProgram only Program SubClassOf FEMADisaster\
 \
-'helipad availability' only 'Helipad Availability' SubClassOf Hospital\
-'hospital status' only 'Hospital Status' SubClassOf Hospital\
-'hospital type' only 'Hospital Type' SubClassOf Hospital\
+helipadAvailability only HelipadAvailability SubClassOf Hospital\
+hospitalStatus only HospitalStatus SubClassOf Hospital\
+hospitalType only HospitalType SubClassOf Hospital\
 hospitalAddress only xsd:string SubClassOf Hospital\
-'hospital name' only xsd:string SubClassOf Hospital\
-'no of hospital beds' only xsd:decimal SubClassOf Hospital\
-'telephone no' only xsd:string SubClassOf Hospital\
+hospitalName only xsd:string SubClassOf Hospital\
+noHospitalBeds only xsd:decimal SubClassOf Hospital\
+telephoneNo only xsd:string SubClassOf Hospital\
 website only xsd:string SubClassOf Hospital\
-'zip code' only xsd:integer SubClassOf Hospital\
+zipCode only xsd:integer SubClassOf Hospital\
 \
-'trauma care level' some 'Trauma Care Level' SubClassOf 'Trauma Center'\
+traumaCareLevel some TraumaCareLevel SubClassOf TraumaCenter\
 \
-'pharmacy type' only 'Pharmacy Type' SubClassOf Pharmacy\
+pharmacyType only PharmacyType SubClassOf Pharmacy\
 address only xsd:string SubClassOf Pharmacy\
-'pharmacy name' only xsd:string SubClassOf Pharmacy\
-'telephone no' only xsd:string SubClassOf Pharmacy\
-'zip code' only xsd:integer SubClassOf Pharmacy\
+pharmacyName only xsd:string SubClassOf Pharmacy\
+telephoneNo only xsd:string SubClassOf Pharmacy\
+zipCode only xsd:integer SubClassOf Pharmacy\
 \
-'administrative level' only 'Administrative Level' SubClassOf 'Public Health Department'\
-address only xsd:string SubClassOf 'Public Health Department'\
-'public health department name' only xsd:string SubClassOf 'Public Health Department'\
-'telephone no' only xsd:string SubClassOf 'Public Health Department'\
-'zip code' only xsd:integer SubClassOf 'Public Health Department'\
+administrativeLevel only AdministrativeLevel SubClassOf PublicHealthDepartment\
+address only xsd:string SubClassOf PublicHealthDepartment\
+publicHealthDepartmentName only xsd:string SubClassOf PublicHealthDepartment\
+telephoneNo only xsd:string SubClassOf PublicHealthDepartment\
+zipCode only xsd:integer SubClassOf PublicHealthDepartment\
 \
-'type of legal/statistical area description (LSAD) area' only 'Legal/Statistical Area Description (LSAD)' SubClassOf 'Metropolitan and micropolitan statistical areas'\
+hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire\
+correspondingMapID some xsd:string SubClassOf MTBSFire\
+hasFireName some xsd:string SubClassOf MTBSFire\
 \
-'has fire mapping assessment label' only 'MTBS Fire Mapping Assessment Label' SubClassOf 'MTBS Fire'\
-'corresponding map ID' some xsd:string SubClassOf 'MTBS Fire'\
-'has mtbs fire name' some xsd:string SubClassOf 'MTBS Fire'\
+nielsenMarketZoneDMA only xsd:int SubClassOf NielsenMarketZone\
+nielsenMarketZoneHHTV only xsd:int SubClassOf NielsenMarketZone\
+nielsenMarketZoneID only xsd:double SubClassOf NielsenMarketZone\
+nielsenMarketZonePUSA only xsd:string SubClassOf NielsenMarketZone\
+nielsenMarketZoneRank only xsd:int SubClassOf NielsenMarketZone\
 \
-'zone number' only xsd:string SubClassOf 'National Weather Zone'\
+hasFireCause only FireCause SubClassOf NIFCFire\
+hasIncidentName only xsd:string SubClassOf NIFCFire\
 \
-'nielsen market zone DMA' only xsd:int SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone HHTV' only xsd:int SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone ID' only xsd:double SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone PUSA' only xsd:string SubClassOf 'Nielsen Market Zone'\
-'nielsen market zone rank' only xsd:int SubClassOf 'Nielsen Market Zone'\
+episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode\
+hasPart some NOAAHazardEvent SubClassOf NOAAHazard\
+hasSegment only EventSegment SubClassOf NOAAHazardEvent\
 \
-'has fire cause' only 'NIFC Fire Cause' SubClassOf 'NIFC Fire'\
-'has incident name' only xsd:string SubClassOf 'NIFC Fire'\
+zoneNumber only xsd:string SubClassOf NWZone\
 \
-'episode has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard Episode'\
-'has part' some 'NOAA Hazard Event' SubClassOf 'NOAA Hazard'\
-'has hazard segment' only 'NOAA Hazard Event Segment' SubClassOf 'NOAA Hazard Event'\
+endsAt only RoadSegmentNode SubClassOf RoadSegment\
+hasRoadType only RoadType SubClassOf RoadSegment\
+startsFrom only RoadSegmentNode SubClassOf RoadSegment\
+hasLength only xsd:decimal SubClassOf RoadSegment\
+hasRoadName only xsd:string SubClassOf RoadSegment\
+hasRoadSign only xsd:string SubClassOf RoadSegment\
 \
-'hazard ends at' only 'Road Segment Node' SubClassOf 'Road Segment'\
-'has road type' only 'Road Type' SubClassOf 'Road Segment'\
-'road segment starts from' only 'Road Segment Node' SubClassOf 'Road Segment'\
-'road length' only xsd:decimal SubClassOf 'Road Segment'\
-'has road name' only xsd:string SubClassOf 'Road Segment'\
-'has road sign' only xsd:string SubClassOf 'Road Segment'\
+endsAt only RoadSegmentNode SubClassOf RoadSegment\
+startsFrom only RoadSegmentNode SubClassOf RoadSegment\
 \
-'hazard ends at' only 'Road Segment Node' SubClassOf 'Road Segment'\
-'road segment starts from' only 'Road Segment Node' SubClassOf 'Road Segment'\
+hasGeometry only GeometryCollection SubClassOf SoilMapUnit\
 \
-'kwg - has geometry' only 'Geometry Collection' SubClassOf 'Soil Map Unit'\
+hasStormTrack some StormTrack SubClassOf NOAAHazard\
+hasStormTracklet only StormTracklet SubClassOf StormTrack\
 \
-'has storm track' some 'Storm Track' SubClassOf 'NOAA Hazard'\
-'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'\
+hasStormTracklet only StormTracklet SubClassOf StormTrack\
 \
-'has storm tracklet' only 'Storm Tracklet' SubClassOf 'Storm Track'\
+typeOfLSAD only LSADArea SubClassOf USCensusMSA\
 \
-'has zip code' only xsd:string SubClassOf 'Zip Code Area'\
+hasZipCode only xsd:string SubClassOf ZipCodeArea\
 \
-'has geometry member' some Feature SubClassOf 'Geometry Collection'\
-'kwg - has geometry' only 'Geometry Collection' SubClassOf 'Soil Map Unit'\
+hasGeometryMember some Feature SubClassOf GeometryCollection\
+hasGeometry only GeometryCollection SubClassOf SoilMapUnit\
 \
-'nominated time' some 'Temporal entity' SubClassOf JudegeInfo\
-'nominated time' only 'Temporal entity' SubClassOf 'Federal Judicial District'\
+nominatedTime some time:TemporalEntity SubClassOf JudegeInfo\
+nominatedTime only time:TemporalEntity SubClassOf FederalJudicalDistrict\
 \
-'trauma description source date' only 'Time instant' SubClassOf 'Trauma Description'\
+traumaDescriptionSourceDate only time:Instant SubClassOf TraumaDescription\
 \
-'trauma care level' some 'Trauma Care Level' SubClassOf 'Trauma Center'\
-'has trauma description' only 'Trauma Description' SubClassOf 'Trauma Care Level'\
+traumaCareLevel some TraumaCareLevel SubClassOf TraumaCenter\
+hasTraumaDescription only TraumaDescription SubClassOf TraumaCareLevel\
 \
-'has trauma description' only 'Trauma Description' SubClassOf 'Trauma Care Level'\
-'trauma description source date' only 'Time instant' SubClassOf 'Trauma Description'\
-'trauma description for state' only xsd:string SubClassOf 'Trauma Description'\
-'trauma description source' only xsd:string SubClassOf 'Trauma Description'\
+hasTraumaDescription only TraumaDescription SubClassOf TraumaCareLevel\
+traumaDescriptionSourceDate only time:Instant SubClassOf TraumaDescription\
+traumaDescriptionForState only xsd:string SubClassOf TraumaDescription\
+traumaDescriptionSource only xsd:string SubClassOf TraumaDescription\
 \
-'nominated by' some 'US President' SubClassOf JudegeInfo\
-'nominated by' only 'US President' SubClassOf 'Federal Judicial District'}
+nominatedBy some USPresident SubClassOf JudegeInfo\
+nominatedBy only USPresident SubClassOf FederalJudicalDistrict}
