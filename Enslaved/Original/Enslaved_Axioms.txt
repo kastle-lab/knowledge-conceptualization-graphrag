@@ -1,0 +1,20 @@
+﻿not (<https://enslaved.org/ontology/Person>) SubClassOf not (<https://enslaved.org/ontology/hasAgentRecord> only 
+(<https://enslaved.org/ontology/AgeRecord> or <https://enslaved.org/ontology/OccupationRecord> or <https://enslaved.org/ontology/OriginRecord> or <https://enslaved.org/ontology/PersonStatusRecord> or <https://enslaved.org/ontology/RaceRecord> or <https://enslaved.org/ontology/SexRecord>))
+<https://enslaved.org/ontology/fallsWithin> some <https://enslaved.org/ontology/TimeSpan> SubClassOf <https://enslaved.org/ontology/TemporalExtent>
+<https://enslaved.org/ontology/generatedBy> some <https://enslaved.org/ontology/ProvenanceActivity> SubClassOf <https://enslaved.org/ontology/EntityWithProvenance>
+<https://enslaved.org/ontology/hasAgentRecord> some owl:Thing SubClassOf <https://enslaved.org/ontology/Agent>
+<https://enslaved.org/ontology/hasEventType> some <https://enslaved.org/ontology/EventTypes> SubClassOf <https://enslaved.org/ontology/Event>
+<https://enslaved.org/ontology/hasInterAgentRelationshipType> some <https://enslaved.org/ontology/InterAgentRelationshipTypes> SubClassOf <https://enslaved.org/ontology/InterAgentRelationshipRecord>
+<https://enslaved.org/ontology/hasOriginalSourceType> some <https://enslaved.org/ontology/DocumentTypes> SubClassOf <https://enslaved.org/ontology/EntityWithProvenance>
+<https://enslaved.org/ontology/hasParticipantRoleType> some <https://enslaved.org/ontology/ParticipantRoleTypes> SubClassOf <https://enslaved.org/ontology/ParticipantRoleRecord>
+<https://enslaved.org/ontology/hasStatusGeneratedEvent> some <https://enslaved.org/ontology/Event> SubClassOf <https://enslaved.org/ontology/PersonStatusRecord>
+<https://enslaved.org/ontology/isRelationshipFrom> some <https://enslaved.org/ontology/Agent> SubClassOf <https://enslaved.org/ontology/InterAgentRelationshipRecord>
+<https://enslaved.org/ontology/isRelationshipTo> some <https://enslaved.org/ontology/Agent> SubClassOf <https://enslaved.org/ontology/InterAgentRelationshipRecord>
+<https://enslaved.org/ontology/performedBy> some <https://enslaved.org/ontology/Agent> SubClassOf <https://enslaved.org/ontology/ProvenanceActivity>
+<https://enslaved.org/ontology/subeventOf> some <https://enslaved.org/ontology/Event> SubClassOf <https://enslaved.org/ontology/Event>
+<https://enslaved.org/ontology/used> some <https://enslaved.org/ontology/EntityWithProvenance> SubClassOf <https://enslaved.org/ontology/ProvenanceActivity>
+<https://enslaved.org/ontology/contains> some xsd:date SubClassOf <https://enslaved.org/ontology/TemporalExtent>
+<https://enslaved.org/ontology/endsAt> some xsd:date SubClassOf <https://enslaved.org/ontology/TemporalExtent>
+<https://enslaved.org/ontology/occursAfter> some xsd:date SubClassOf <https://enslaved.org/ontology/TemporalExtent>
+<https://enslaved.org/ontology/occursBefore> some xsd:date SubClassOf <https://enslaved.org/ontology/TemporalExtent>
+<https://enslaved.org/ontology/startsAt> some xsd:date SubClassOf <https://enslaved.org/ontology/TemporalExtent>
