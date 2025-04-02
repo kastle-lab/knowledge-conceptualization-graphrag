@@ -1,223 +1,83 @@
-administrativeLevel only AdministrativeLevel SubClassOf PublicHealthDepartment
-
-hasChiefJudge only ChiefJudge SubClassOf JudegeInfo
-
-hasDeclaration only Declaration SubClassOf FEMADisaster
-fipsCountyCode some xsd:string SubClassOf Declaration
-fipsStateCode some xsd:string SubClassOf Declaration
-hasDeclarationID some xsd:string SubClassOf Declaration
-
-startsFrom some Fix SubClassOf EventSegment
-hasSegment only EventSegment SubClassOf NOAAHazardEvent
-
-hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire
-correspondingMapID some xsd:string SubClassOf MTBSFire
-hasFireName some xsd:string SubClassOf MTBSFire
-
-hasFireCause only FireCause SubClassOf NIFCFire
-hasIncidentName only xsd:string SubClassOf NIFCFire
-
-episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode
-hasPart some NOAAHazardEvent SubClassOf NOAAHazard
-hasSegment only EventSegment SubClassOf NOAAHazardEvent
-
-hasGeometry only GeometryCollection SubClassOf SoilMapUnit
-
-hasStormTrack some StormTrack SubClassOf NOAAHazard
-hasStormTracklet only StormTracklet SubClassOf StormTrack
-
-hasStormTracklet only StormTracklet SubClassOf StormTrack
-
-typeOfLSAD only LSADArea SubClassOf USCensusMSA
-
-hasFireCause only FireCause SubClassOf NIFCFire
-
-hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire
-
-startsFrom some Fix SubClassOf EventSegment
-hasAzimuth some xsd:string SubClassOf Fix
-hasRange some xsd:string SubClassOf Fix
-
-hasDeclaration only Declaration SubClassOf FEMADisaster
-hasProgram only Program SubClassOf FEMADisaster
-
-hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire
-correspondingMapID some xsd:string SubClassOf MTBSFire
-hasFireName some xsd:string SubClassOf MTBSFire
-
-hasFireCause only FireCause SubClassOf NIFCFire
-hasIncidentName only xsd:string SubClassOf NIFCFire
-
-episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode
-hasPart some NOAAHazardEvent SubClassOf NOAAHazard
-hasSegment only EventSegment SubClassOf NOAAHazardEvent
-
-episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode
-hasNarrative some xsd:string SubClassOf HazardEpisode
-
-helipadAvailability only HelipadAvailability SubClassOf Hospital
-
-hospitalStatus only HospitalStatus SubClassOf Hospital
-
-hospitalType only HospitalType SubClassOf Hospital
-
-nominatedBy some USPresident SubClassOf JudegeInfo
-nominatedTime some time:TemporalEntity SubClassOf JudegeInfo
-hasChiefJudge only ChiefJudge SubClassOf JudegeInfo
-hasJudgeInfo only JudegeInfo SubClassOf FederalJudicalDistrict
-
-typeOfLSAD only LSADArea SubClassOf USCensusMSA
-hasCode some xsd:string SubClassOf LSADArea
-
-hasMappingProgram only MappingProgram SubClassOf MTBSFireObservationCollection
-
-episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode
-hasPart some NOAAHazardEvent SubClassOf NOAAHazard
-hasSegment only EventSegment SubClassOf NOAAHazardEvent
-
-hasPart some NOAAHazardEvent SubClassOf NOAAHazard
-hasStormTrack some StormTrack SubClassOf NOAAHazard
-
-compositePercentageInformation only xsd:string SubClassOf DroughtZoneOverlapObservationCollection
-
-hasMappingProgram only MappingProgram SubClassOf MTBSFireObservationCollection
-
-hasMapUnitAreaSymbol only xsd:string SubClassOf SoilMapUnitObservationCollection
-hasSoilMapUnitKey only xsd:string SubClassOf SoilMapUnitObservationCollection
-hasSoilMapUnitSymbol only xsd:string SubClassOf SoilMapUnitObservationCollection
-
-pharmacyType only PharmacyType SubClassOf Pharmacy
-
-cbsaCode only xsd:string SubClassOf AirQualitySite
-cbsaName only xsd:string SubClassOf AirQualitySite
-siteID only xsd:string SubClassOf AirQualitySite
-siteName only xsd:string SubClassOf AirQualitySite
-
-hasProgram only Program SubClassOf FEMADisaster
-hasProgramID only xsd:string SubClassOf Program
-
-mean only Quantity SubClassOf ClimateDivisionObservationResult
-
-hasJudgeInfo only JudegeInfo SubClassOf FederalJudicalDistrict
-inCircuit only RegionalCircuit SubClassOf FederalJudicalDistrict
-nominatedBy only USPresident SubClassOf FederalJudicalDistrict
-nominatedTime only time:TemporalEntity SubClassOf FederalJudicalDistrict
-hasName some xsd:string SubClassOf FederalJudicalDistrict
-hasABBR only xsd:string SubClassOf FederalJudicalDistrict
-
-nielsenMarketZoneDMA only xsd:int SubClassOf NielsenMarketZone
-nielsenMarketZoneHHTV only xsd:int SubClassOf NielsenMarketZone
-nielsenMarketZoneID only xsd:double SubClassOf NielsenMarketZone
-nielsenMarketZonePUSA only xsd:string SubClassOf NielsenMarketZone
-nielsenMarketZoneRank only xsd:int SubClassOf NielsenMarketZone
-
-zoneNumber only xsd:string SubClassOf NWZone
-
-typeOfLSAD only LSADArea SubClassOf USCensusMSA
-
-hasZipCode only xsd:string SubClassOf ZipCodeArea
-
-inCircuit only RegionalCircuit SubClassOf FederalJudicalDistrict
-
-mean only Quantity SubClassOf ClimateDivisionObservationResult
-anomaly only xsd:decimal SubClassOf ClimateDivisionObservationResult
-rank only xsd:integer SubClassOf ClimateDivisionObservationResult
-
-hasRoadType only RoadType SubClassOf RoadSegment
-
-pocValue only xsd:string SubClassOf AirQualityInstrument
-
-hasGeometryMember some Feature SubClassOf GeometryCollection
-
-hasJudgeInfo only JudegeInfo SubClassOf FederalJudicalDistrict
-inCircuit only RegionalCircuit SubClassOf FederalJudicalDistrict
-nominatedBy only USPresident SubClassOf FederalJudicalDistrict
-nominatedTime only time:TemporalEntity SubClassOf FederalJudicalDistrict
-hasName some xsd:string SubClassOf FederalJudicalDistrict
-hasABBR only xsd:string SubClassOf FederalJudicalDistrict
-
-hasDeclaration only Declaration SubClassOf FEMADisaster
-hasProgram only Program SubClassOf FEMADisaster
-
-helipadAvailability only HelipadAvailability SubClassOf Hospital
-hospitalStatus only HospitalStatus SubClassOf Hospital
-hospitalType only HospitalType SubClassOf Hospital
-hospitalAddress only xsd:string SubClassOf Hospital
-hospitalName only xsd:string SubClassOf Hospital
-noHospitalBeds only xsd:decimal SubClassOf Hospital
-telephoneNo only xsd:string SubClassOf Hospital
-website only xsd:string SubClassOf Hospital
-zipCode only xsd:integer SubClassOf Hospital
-
-traumaCareLevel some TraumaCareLevel SubClassOf TraumaCenter
-
-pharmacyType only PharmacyType SubClassOf Pharmacy
-address only xsd:string SubClassOf Pharmacy
-pharmacyName only xsd:string SubClassOf Pharmacy
-telephoneNo only xsd:string SubClassOf Pharmacy
-zipCode only xsd:integer SubClassOf Pharmacy
-
-administrativeLevel only AdministrativeLevel SubClassOf PublicHealthDepartment
-address only xsd:string SubClassOf PublicHealthDepartment
-publicHealthDepartmentName only xsd:string SubClassOf PublicHealthDepartment
-telephoneNo only xsd:string SubClassOf PublicHealthDepartment
-zipCode only xsd:integer SubClassOf PublicHealthDepartment
-
-hasFireMappingAssessmentLabel only FireMappingAssessmentLabel SubClassOf MTBSFire
-correspondingMapID some xsd:string SubClassOf MTBSFire
-hasFireName some xsd:string SubClassOf MTBSFire
-
-nielsenMarketZoneDMA only xsd:int SubClassOf NielsenMarketZone
-nielsenMarketZoneHHTV only xsd:int SubClassOf NielsenMarketZone
-nielsenMarketZoneID only xsd:double SubClassOf NielsenMarketZone
-nielsenMarketZonePUSA only xsd:string SubClassOf NielsenMarketZone
-nielsenMarketZoneRank only xsd:int SubClassOf NielsenMarketZone
-
-hasFireCause only FireCause SubClassOf NIFCFire
-hasIncidentName only xsd:string SubClassOf NIFCFire
-
-episodeHasPart some NOAAHazardEvent SubClassOf HazardEpisode
-hasPart some NOAAHazardEvent SubClassOf NOAAHazard
-hasSegment only EventSegment SubClassOf NOAAHazardEvent
-
-zoneNumber only xsd:string SubClassOf NWZone
-
-endsAt only RoadSegmentNode SubClassOf RoadSegment
-hasRoadType only RoadType SubClassOf RoadSegment
-startsFrom only RoadSegmentNode SubClassOf RoadSegment
-hasLength only xsd:decimal SubClassOf RoadSegment
-hasRoadName only xsd:string SubClassOf RoadSegment
-hasRoadSign only xsd:string SubClassOf RoadSegment
-
-endsAt only RoadSegmentNode SubClassOf RoadSegment
-startsFrom only RoadSegmentNode SubClassOf RoadSegment
-
-hasGeometry only GeometryCollection SubClassOf SoilMapUnit
-
-hasStormTrack some StormTrack SubClassOf NOAAHazard
-hasStormTracklet only StormTracklet SubClassOf StormTrack
-
-hasStormTracklet only StormTracklet SubClassOf StormTrack
-
-typeOfLSAD only LSADArea SubClassOf USCensusMSA
-
-hasZipCode only xsd:string SubClassOf ZipCodeArea
-
-hasGeometryMember some Feature SubClassOf GeometryCollection
-hasGeometry only GeometryCollection SubClassOf SoilMapUnit
-
-nominatedTime some time:TemporalEntity SubClassOf JudegeInfo
-nominatedTime only time:TemporalEntity SubClassOf FederalJudicalDistrict
-
-traumaDescriptionSourceDate only time:Instant SubClassOf TraumaDescription
-
-traumaCareLevel some TraumaCareLevel SubClassOf TraumaCenter
-hasTraumaDescription only TraumaDescription SubClassOf TraumaCareLevel
-
-hasTraumaDescription only TraumaDescription SubClassOf TraumaCareLevel
-traumaDescriptionSourceDate only time:Instant SubClassOf TraumaDescription
-traumaDescriptionForState only xsd:string SubClassOf TraumaDescription
-traumaDescriptionSource only xsd:string SubClassOf TraumaDescription
-
-nominatedBy some USPresident SubClassOf JudegeInfo
-nominatedBy only USPresident SubClassOf FederalJudicalDistrict
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/episodeHasPart> some <http://stko-kwg.geog.ucsb.edu/lod/ontology/NOAAHazardEvent> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/HazardEpisode>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasGeometryMember> some <http://www.opengis.net/ont/geosparql#Feature> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/GeometryCollection>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasPart> some <http://stko-kwg.geog.ucsb.edu/lod/ontology/NOAAHazardEvent> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NOAAHazard>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasStormTrack> some <http://stko-kwg.geog.ucsb.edu/lod/ontology/StormTrack> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NOAAHazard>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nominatedBy> some <http://stko-kwg.geog.ucsb.edu/lod/ontology/USPresident> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/JudegeInfo>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nominatedTime> some time:TemporalEntity SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/JudegeInfo>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/startsFrom> some <http://stko-kwg.geog.ucsb.edu/lod/ontology/Fix> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/EventSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/traumaCareLevel> some <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaCareLevel> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaCenter>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/administrativeLevel> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/AdministrativeLevel> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/PublicHealthDepartment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/endsAt> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegmentNode> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasChiefJudge> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/ChiefJudge> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/JudegeInfo>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasDeclaration> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/Declaration> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FEMADisaster>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasFireCause> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/FireCause> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NIFCFire>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasFireMappingAssessmentLabel> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/FireMappingAssessmentLabel> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/MTBSFire>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasGeometry> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/GeometryCollection> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/SoilMapUnit>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasJudgeInfo> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/JudegeInfo> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FederalJudicalDistrict>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasMappingProgram> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/MappingProgram> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/MTBSFireObservationCollection>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasProgram> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/Program> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FEMADisaster>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasRoadType> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadType> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasSegment> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/EventSegment> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NOAAHazardEvent>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasStormTracklet> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/StormTracklet> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/StormTrack>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasTraumaDescription> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaDescription> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaCareLevel>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/helipadAvailability> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/HelipadAvailability> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hospitalStatus> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/HospitalStatus> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hospitalType> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/HospitalType> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/inCircuit> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/RegionalCircuit> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FederalJudicalDistrict>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/mean> only <http://qudt.org/2.1/schema/qudt#Quantity> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/ClimateDivisionObservationResult>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nominatedBy> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/USPresident> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FederalJudicalDistrict>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nominatedTime> only time:TemporalEntity SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FederalJudicalDistrict>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/pharmacyType> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/PharmacyType> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Pharmacy>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/startsFrom> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegmentNode> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/traumaDescriptionSourceDate> only time:Instant SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaDescription>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/typeOfLSAD> only <http://stko-kwg.geog.ucsb.edu/lod/ontology/LSADArea> SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/USCensusMSA>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/correspondingMapID> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/MTBSFire>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/fipsCountyCode> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Declaration>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/fipsStateCode> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Declaration>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasAzimuth> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Fix>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasCode> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/LSADArea>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasDeclarationID> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Declaration>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasFireName> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/MTBSFire>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasName> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FederalJudicalDistrict>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasNarrative> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/HazardEpisode>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasRange> some xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Fix>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/address> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Pharmacy>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/address> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/PublicHealthDepartment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/anomaly> only xsd:decimal SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/ClimateDivisionObservationResult>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/cbsaCode> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/AirQualitySite>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/cbsaName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/AirQualitySite>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/compositePercentageInformation> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/DroughtZoneOverlapObservationCollection>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasIncidentName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NIFCFire>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasLength> only xsd:decimal SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasMapUnitAreaSymbol> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/SoilMapUnitObservationCollection>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasProgramID> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Program>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasRoadName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasRoadSign> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/RoadSegment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasSoilMapUnitKey> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/SoilMapUnitObservationCollection>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasSoilMapUnitSymbol> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/SoilMapUnitObservationCollection>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hasZipCode> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/ZipCodeArea>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hospitalAddress> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/hospitalName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nielsenMarketZoneDMA> only xsd:int SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NielsenMarketZone>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nielsenMarketZoneHHTV> only xsd:int SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NielsenMarketZone>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nielsenMarketZoneID> only xsd:double SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NielsenMarketZone>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nielsenMarketZonePUSA> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NielsenMarketZone>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/nielsenMarketZoneRank> only xsd:int SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NielsenMarketZone>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/noHospitalBeds> only xsd:decimal SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/pharmacyName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Pharmacy>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/pocValue> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/AirQualityInstrument>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/publicHealthDepartmentName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/PublicHealthDepartment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/rank> only xsd:integer SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/ClimateDivisionObservationResult>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/siteID> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/AirQualitySite>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/siteName> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/AirQualitySite>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/telephoneNo> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/telephoneNo> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Pharmacy>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/telephoneNo> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/PublicHealthDepartment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/traumaDescriptionForState> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaDescription>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/traumaDescriptionSource> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/TraumaDescription>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/website> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/zipCode> only xsd:integer SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Hospital>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/zipCode> only xsd:integer SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/Pharmacy>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/zipCode> only xsd:integer SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/PublicHealthDepartment>
+<http://stko-kwg.geog.ucsb.edu/lod/ontology/zoneNumber> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/NWZone>
+<http://www.w3.org/ns/sosa/hasABBR> only xsd:string SubClassOf <http://stko-kwg.geog.ucsb.edu/lod/ontology/FederalJudicalDistrict>
