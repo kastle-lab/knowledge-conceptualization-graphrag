@@ -1,155 +1,155 @@
-# Place hasPlaceType PlaceType
-existential: `Place SubClassOf hasPlaceType some PlaceType`
+# kwgl-ont:Place kwgl-ont:hasPlaceType kwgl-ont:PlaceType
+existential: `kwgl-ont:Place SubClassOf kwgl-ont:hasPlaceType some kwgl-ont:PlaceType`
 
-global range: `owl:Thing SubClassOf hasPlaceType only PlaceType`
+global range: `owl:Thing SubClassOf kwgl-ont:hasPlaceType only kwgl-ont:PlaceType`
 
-qualified scoped functionality: `Place SubClassOf hasPlaceType max 1 PlaceType`
+qualified scoped functionality: `kwgl-ont:Place SubClassOf kwgl-ont:hasPlaceType max 1 kwgl-ont:PlaceType`
 
-scoped domain: `hasPlaceType some PlaceType SubClassOf Place`
+scoped domain: `kwgl-ont:hasPlaceType some kwgl-ont:PlaceType SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf hasPlaceType some PlaceType`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:hasPlaceType some kwgl-ont:PlaceType`
 
-# Place sfWithin Place
-scoped domain: `sfWithin some Place SubClassOf Place`
+# kwgl-ont:Place kwgl-ont:sfWithin kwgl-ont:Place
+scoped domain: `kwgl-ont:sfWithin some kwgl-ont:Place SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf sfWithin some Place`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:sfWithin some kwgl-ont:Place`
 
-# Place sfContains Place
-scoped domain: `sfContains some Place SubClassOf Place`
+# kwgl-ont:Place kwgl-ont:sfContains kwgl-ont:Place
+scoped domain: `kwgl-ont:sfContains some kwgl-ont:Place SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf sfContains some Place`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:sfContains some kwgl-ont:Place`
 
-# Place sfTouches Place
-scoped domain: `sfTouches some Place SubClassOf Place`
+# kwgl-ont:Place kwgl-ont:sfTouches kwgl-ont:Place
+scoped domain: `kwgl-ont:sfTouches some kwgl-ont:Place SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf sfTouches some Place`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:sfTouches some kwgl-ont:Place`
 
-# Place sfOverlaps Place
-scoped domain: `sfOverlaps some Place SubClassOf Place`
+# kwgl-ont:Place kwgl-ont:sfOverlaps kwgl-ont:Place
+scoped domain: `kwgl-ont:sfOverlaps some kwgl-ont:Place SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf sfOverlaps some Place`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:sfOverlaps some kwgl-ont:Place`
 
-# Place sfIntersects Place
-scoped domain: `sfIntersects some Place SubClassOf Place`
+# kwgl-ont:Place kwgl-ont:sfIntersects kwgl-ont:Place
+scoped domain: `kwgl-ont:sfIntersects some kwgl-ont:Place SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf sfIntersects some Place`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:sfIntersects some kwgl-ont:Place`
 
-# Place impactedBy HazardEvent
-scoped domain: `impactedBy some HazardEvent SubClassOf Place`
+# kwgl-ont:Place kwgl-ont:impactedBy kwgl-ont:HazardEvent
+scoped domain: `kwgl-ont:impactedBy some kwgl-ont:HazardEvent SubClassOf kwgl-ont:Place`
 
-scoped range: `Place SubClassOf impactedBy some HazardEvent`
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:impactedBy some kwgl-ont:HazardEvent`
 
-# HazardEvent hasImpacted Place
-scoped domain: `hasImpacted some Place SubClassOf HazardEvent`
+# kwgl-ont:HazardEvent kwgl-ont:hasImpacted kwgl-ont:Place
+scoped domain: `kwgl-ont:hasImpacted some kwgl-ont:Place SubClassOf kwgl-ont:HazardEvent`
 
-scoped range: `HazardEvent SubClassOf hasImpacted some Place`
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:hasImpacted some kwgl-ont:Place`
 
-# HazardEvent hasHazardType HazardType
-scoped domain: `hasHazardType some HazardType SubClassOf HazardEvent`
+# kwgl-ont:HazardEvent kwgl-ont:hasHazardType kwgl-ont:HazardType
+scoped domain: `kwgl-ont:hasHazardType some kwgl-ont:HazardType SubClassOf kwgl-ont:HazardEvent`
 
-scoped range: `HazardEvent SubClassOf hasHazardType some HazardType`
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:hasHazardType some kwgl-ont:HazardType`
 
-# HazardEvent isOfFireType FireType
-scoped domain: `isOfFireType some FireType SubClassOf HazardEvent`
+# kwgl-ont:HazardEvent kwgl-ont:isOfFireType kwgl-ont:FireType
+scoped domain: `kwgl-ont:isOfFireType some kwgl-ont:FireType SubClassOf kwgl-ont:HazardEvent`
 
-scoped range: `HazardEvent SubClassOf isOfFireType some FireType`
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:isOfFireType some kwgl-ont:FireType`
 
-# Place averageMonthlyTemperatureInCelsius integer
-scoped range: `Place SubClassOf averageMonthlyTemperatureInCelsius some integer`
+# kwgl-ont:Place kwgl-ont:averageMonthlyTemperatureInCelsius xsd:integer
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:averageMonthlyTemperatureInCelsius some xsd:integer`
 
-# Place maximumMonthlyTemperatureInCelsius integer
-scoped range: `Place SubClassOf maximumMonthlyTemperatureInCelsius some integer`
+# kwgl-ont:Place kwgl-ont:maximumMonthlyTemperatureInCelsius xsd:integer
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:maximumMonthlyTemperatureInCelsius some xsd:integer`
 
-# Place minimumMonthlyTemperatureInCelsius integer
-scoped range: `Place SubClassOf minimumMonthlyTemperatureInCelsius some integer`
+# kwgl-ont:Place kwgl-ont:minimumMonthlyTemperatureInCelsius xsd:integer
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:minimumMonthlyTemperatureInCelsius some xsd:integer`
 
-# Place averageCoolingDegreeDaysPerMonth integer
-scoped range: `Place SubClassOf averageCoolingDegreeDaysPerMonth some integer`
+# kwgl-ont:Place kwgl-ont:averageCoolingDegreeDaysPerMonth xsd:integer
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:averageCoolingDegreeDaysPerMonth some xsd:integer`
 
-# Place averageHeatingDegreeDaysPerMonth integer
-scoped range: `Place SubClassOf averageHeatingDegreeDaysPerMonth some integer`
+# kwgl-ont:Place kwgl-ont:averageHeatingDegreeDaysPerMonth xsd:integer
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:averageHeatingDegreeDaysPerMonth some xsd:integer`
 
-# Place percentObese nonNegativeInteger
-scoped range: `Place SubClassOf percentObese some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:percentObese xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:percentObese some xsd:nonNegativeInteger`
 
-# Place percentBelowPovertyLine nonNegativeInteger
-scoped range: `Place SubClassOf percentBelowPovertyLine some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:percentBelowPovertyLine xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:percentBelowPovertyLine some xsd:nonNegativeInteger`
 
-# Place percentDiabetic nonNegativeInteger
-scoped range: `Place SubClassOf percentDiabetic some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:percentDiabetic xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:percentDiabetic some xsd:nonNegativeInteger`
 
-# Place hasPopulation nonNegativeInteger
-scoped range: `Place SubClassOf hasPopulation some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:hasPopulation xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:hasPopulation some xsd:nonNegativeInteger`
 
-# Place hasNumberOfHouseHolds nonNegativeInteger
-scoped range: `Place SubClassOf hasNumberOfHouseHolds some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:hasNumberOfHouseHolds xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:hasNumberOfHouseHolds some xsd:nonNegativeInteger`
 
-# Place numberOfFiresImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfFiresImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfFiresImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfFiresImpactingPlace some xsd:nonNegativeInteger`
 
-# Place dollarDamageOfFiresImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf dollarDamageOfFiresImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:dollarDamageOfFiresImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:dollarDamageOfFiresImpactingPlace some xsd:nonNegativeInteger`
 
-# Place numberOfHurricanesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfHurricanesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfHurricanesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfHurricanesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place dollarDamageOfHurricanesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf dollarDamageOfHurricanesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:dollarDamageOfHurricanesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:dollarDamageOfHurricanesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place numberOfEarthquakesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfEarthquakesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfEarthquakesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfEarthquakesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place numberOfTornadoesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfTornadoesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfTornadoesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfTornadoesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place dollarDamageOfTornadoesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf dollarDamageOfTornadoesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:dollarDamageOfTornadoesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:dollarDamageOfTornadoesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place numberOfStormSurgesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfStormSurgesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfStormSurgesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfStormSurgesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place dollarDamageOfStormSurgesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf dollarDamageOfStormSurgesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:dollarDamageOfStormSurgesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:dollarDamageOfStormSurgesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place numberOfFloodsImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfFloodsImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfFloodsImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfFloodsImpactingPlace some xsd:nonNegativeInteger`
 
-# Place dollarDamageOfFloodsImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf dollarDamageOfFloodsImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:dollarDamageOfFloodsImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:dollarDamageOfFloodsImpactingPlace some xsd:nonNegativeInteger`
 
-# Place numberOfLandslidesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf numberOfLandslidesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:numberOfLandslidesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:numberOfLandslidesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place dollarDamageOfLandslidesImpactingPlace nonNegativeInteger
-scoped range: `Place SubClassOf dollarDamageOfLandslidesImpactingPlace some nonNegativeInteger`
+# kwgl-ont:Place kwgl-ont:dollarDamageOfLandslidesImpactingPlace xsd:nonNegativeInteger
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:dollarDamageOfLandslidesImpactingPlace some xsd:nonNegativeInteger`
 
-# Place hasName string
-scoped range: `Place SubClassOf hasName some string`
+# kwgl-ont:Place kwgl-ont:hasName xsd:string
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:hasName some xsd:string`
 
-# Place hasKWGEntity anyURI
-scoped range: `Place SubClassOf hasKWGEntity some anyURI`
+# kwgl-ont:Place kwgl-ont:hasKWGEntity xsd:anyURI
+scoped range: `kwgl-ont:Place SubClassOf kwgl-ont:hasKWGEntity some xsd:anyURI`
 
-# HazardEvent hasName string
-scoped range: `HazardEvent SubClassOf hasName some string`
+# kwgl-ont:HazardEvent kwgl-ont:hasName xsd:string
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:hasName some xsd:string`
 
-# HazardEvent hasKWGEntity anyURI
-scoped range: `HazardEvent SubClassOf hasKWGEntity some anyURI`
+# kwgl-ont:HazardEvent kwgl-ont:hasKWGEntity xsd:anyURI
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:hasKWGEntity some xsd:anyURI`
 
-# HazardEvent hasStartDate date
-scoped range: `HazardEvent SubClassOf hasStartDate some date`
+# kwgl-ont:HazardEvent kwgl-ont:hasStartDate xsd:date
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:hasStartDate some xsd:date`
 
-# HazardEvent hasEndDate date
-scoped range: `HazardEvent SubClassOf hasEndDate some date`
+# kwgl-ont:HazardEvent kwgl-ont:hasEndDate xsd:date
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:hasEndDate some xsd:date`
 
-# HazardEvent affectedAreaInAcres nonNegativeInteger
-scoped range: `HazardEvent SubClassOf affectedAreaInAcres some nonNegativeInteger`
+# kwgl-ont:HazardEvent kwgl-ont:affectedAreaInAcres xsd:nonNegativeInteger
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:affectedAreaInAcres some xsd:nonNegativeInteger`
 
-# HazardEvent numberOfDeaths nonNegativeInteger
-scoped range: `HazardEvent SubClassOf numberOfDeaths some nonNegativeInteger`
+# kwgl-ont:HazardEvent kwgl-ont:numberOfDeaths xsd:nonNegativeInteger
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:numberOfDeaths some xsd:nonNegativeInteger`
 
-# HazardEvent damageToInfrastructureInDollars nonNegativeInteger
-scoped range: `HazardEvent SubClassOf damageToInfrastructureInDollars some nonNegativeInteger`
+# kwgl-ont:HazardEvent kwgl-ont:damageToInfrastructureInDollars xsd:nonNegativeInteger
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:damageToInfrastructureInDollars some xsd:nonNegativeInteger`
 
-# HazardEvent damageToCropsInDollars nonNegativeInteger
-scoped range: `HazardEvent SubClassOf damageToCropsInDollars some nonNegativeInteger`
+# kwgl-ont:HazardEvent kwgl-ont:damageToCropsInDollars xsd:nonNegativeInteger
+scoped range: `kwgl-ont:HazardEvent SubClassOf kwgl-ont:damageToCropsInDollars some xsd:nonNegativeInteger`
 

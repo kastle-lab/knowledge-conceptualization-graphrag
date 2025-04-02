@@ -452,75 +452,75 @@ if __name__ == "__main__":
     if type_value == "graphrag":
 
         sd = [
-            "Place sfWithin Place",
-            "Place sfContains Place",
-            "Place sfTouches Place",
-            "Place sfOverlaps Place",
-            "Place sfIntersects Place",
-            "Place hasPlaceType PlaceType",
-            "Place impactedBy HazardEvent",
-            "HazardEvent hasImpacted Place",
-            "HazardEvent hasHazardType HazardType",
-            "HazardEvent isOfFireType FireType"
+            "kwgl-ont:Place kwgl-ont:sfWithin kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfContains kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfTouches kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfOverlaps kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfIntersects kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:hasPlaceType kwgl-ont:PlaceType",
+            "kwgl-ont:Place kwgl-ont:impactedBy kwgl-ont:HazardEvent",
+            "kwgl-ont:HazardEvent kwgl-ont:hasImpacted kwgl-ont:Place",
+            "kwgl-ont:HazardEvent kwgl-ont:hasHazardType kwgl-ont:HazardType",
+            "kwgl-ont:HazardEvent kwgl-ont:isOfFireType kwgl-ont:FireType"
         ]
 
         sr = [
-            "Place sfWithin Place",
-            "Place sfContains Place",
-            "Place sfTouches Place",
-            "Place sfOverlaps Place",
-            "Place sfIntersects Place",
-            "Place hasPlaceType PlaceType",
-            "Place impactedBy HazardEvent",
-            "HazardEvent hasImpacted Place",
-            "HazardEvent hasHazardType HazardType",
-            "HazardEvent isOfFireType FireType",
-            "Place averageMonthlyTemperatureInCelsius integer",
-            "Place maximumMonthlyTemperatureInCelsius integer",
-            "Place minimumMonthlyTemperatureInCelsius integer",
-            "Place averageCoolingDegreeDaysPerMonth integer",
-            "Place averageHeatingDegreeDaysPerMonth integer",
-            "Place percentObese nonNegativeInteger",
-            "Place percentBelowPovertyLine nonNegativeInteger",
-            "Place percentDiabetic nonNegativeInteger",
-            "Place hasPopulation nonNegativeInteger",
-            "Place hasNumberOfHouseHolds nonNegativeInteger",
-            "Place numberOfFiresImpactingPlace nonNegativeInteger",
-            "Place dollarDamageOfFiresImpactingPlace nonNegativeInteger",
-            "Place numberOfHurricanesImpactingPlace nonNegativeInteger",
-            "Place dollarDamageOfHurricanesImpactingPlace nonNegativeInteger",
-            "Place numberOfEarthquakesImpactingPlace nonNegativeInteger",
-            "Place numberOfTornadoesImpactingPlace nonNegativeInteger",
-            "Place dollarDamageOfTornadoesImpactingPlace nonNegativeInteger",
-            "Place numberOfStormSurgesImpactingPlace nonNegativeInteger",
-            "Place dollarDamageOfStormSurgesImpactingPlace nonNegativeInteger",
-            "Place numberOfFloodsImpactingPlace nonNegativeInteger",
-            "Place dollarDamageOfFloodsImpactingPlace nonNegativeInteger",
-            "Place numberOfLandslidesImpactingPlace nonNegativeInteger",
-            "Place dollarDamageOfLandslidesImpactingPlace nonNegativeInteger",
-            "Place hasName string",
-            "Place hasKWGEntity anyURI",
-            "HazardEvent hasName string",
-            "HazardEvent hasKWGEntity anyURI",
-            "HazardEvent hasStartDate date",
-            "HazardEvent hasEndDate date",
-            "HazardEvent affectedAreaInAcres nonNegativeInteger",
-            "HazardEvent numberOfDeaths nonNegativeInteger",
-            "HazardEvent damageToInfrastructureInDollars nonNegativeInteger",
-            "HazardEvent damageToCropsInDollars nonNegativeInteger"
+            "kwgl-ont:Place kwgl-ont:sfWithin kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfContains kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfTouches kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfOverlaps kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:sfIntersects kwgl-ont:Place",
+            "kwgl-ont:Place kwgl-ont:hasPlaceType kwgl-ont:PlaceType",
+            "kwgl-ont:Place kwgl-ont:impactedBy kwgl-ont:HazardEvent",
+            "kwgl-ont:HazardEvent kwgl-ont:hasImpacted kwgl-ont:Place",
+            "kwgl-ont:HazardEvent kwgl-ont:hasHazardType kwgl-ont:HazardType",
+            "kwgl-ont:HazardEvent kwgl-ont:isOfFireType kwgl-ont:FireType",
+            "kwgl-ont:Place kwgl-ont:averageMonthlyTemperatureInCelsius xsd:integer",
+            "kwgl-ont:Place kwgl-ont:maximumMonthlyTemperatureInCelsius xsd:integer",
+            "kwgl-ont:Place kwgl-ont:minimumMonthlyTemperatureInCelsius xsd:integer",
+            "kwgl-ont:Place kwgl-ont:averageCoolingDegreeDaysPerMonth xsd:integer",
+            "kwgl-ont:Place kwgl-ont:averageHeatingDegreeDaysPerMonth xsd:integer",
+            "kwgl-ont:Place kwgl-ont:percentObese xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:percentBelowPovertyLine xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:percentDiabetic xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:hasPopulation xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:hasNumberOfHouseHolds xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfFiresImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:dollarDamageOfFiresImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfHurricanesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:dollarDamageOfHurricanesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfEarthquakesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfTornadoesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:dollarDamageOfTornadoesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfStormSurgesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:dollarDamageOfStormSurgesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfFloodsImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:dollarDamageOfFloodsImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:numberOfLandslidesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:dollarDamageOfLandslidesImpactingPlace xsd:nonNegativeInteger",
+            "kwgl-ont:Place kwgl-ont:hasName xsd:string",
+            "kwgl-ont:Place kwgl-ont:hasKWGEntity xsd:anyURI",
+            "kwgl-ont:HazardEvent kwgl-ont:hasName xsd:string",
+            "kwgl-ont:HazardEvent kwgl-ont:hasKWGEntity xsd:anyURI",
+            "kwgl-ont:HazardEvent kwgl-ont:hasStartDate xsd:date",
+            "kwgl-ont:HazardEvent kwgl-ont:hasEndDate xsd:date",
+            "kwgl-ont:HazardEvent kwgl-ont:affectedAreaInAcres xsd:nonNegativeInteger",
+            "kwgl-ont:HazardEvent kwgl-ont:numberOfDeaths xsd:nonNegativeInteger",
+            "kwgl-ont:HazardEvent kwgl-ont:damageToInfrastructureInDollars xsd:nonNegativeInteger",
+            "kwgl-ont:HazardEvent kwgl-ont:damageToCropsInDollars xsd:nonNegativeInteger"
         ]
 
         gr = [
-            "Place hasPlaceType PlaceType"
+            "kwgl-ont:Place kwgl-ont:hasPlaceType kwgl-ont:PlaceType"
         ]
 
         # check these two: hasPlaceType is "scoped qualified existential" --> "qualified scoped functionality" and "existential"?
         qsf = [
-            "Place hasPlaceType PlaceType"
+            "kwgl-ont:Place kwgl-ont:hasPlaceType kwgl-ont:PlaceType"
         ]
 
         ex = [
-            "Place hasPlaceType PlaceType"
+            "kwgl-ont:Place kwgl-ont:hasPlaceType kwgl-ont:PlaceType"
         ]
 
         flist = {}
