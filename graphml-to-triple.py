@@ -4,7 +4,8 @@ import re
 
 # Load GraphML
 # replace with your file path
-G = nx.read_graphml("kwg-lite-schema-diagram.graphml")
+filename = "integrated-schema-diagram-manhattan.graphml"
+G = nx.read_graphml(filename)
 
 
 def clean_label(label):
@@ -48,7 +49,7 @@ for u, v, edge_data in G.edges(data=True):
 triples = list(set(triples))
 
 # Write to CSV
-with open('cleaned_triples_lite.csv', 'w', newline='') as f:
+with open(f'{filename}.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['subject', 'predicate', 'object'])
     for triple in triples:
