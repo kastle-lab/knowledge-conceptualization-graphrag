@@ -1,0 +1,26 @@
+Subject,Predicate,Object
+wb:Item (Agent),hasName,xsd:string
+hasName,recordedAt,wd:Item (Event)
+hasName,nameStructure,wd:Item (NameStructure)
+hasName,isDirectlyBasedOn,Reference
+wb:Item (Agent),hasSex,wd:Item (SexType)
+hasSex,recordedAt,wd:Item (Event)
+hasSex,isDirectlyBasedOn,Reference
+wb:Item (Agent),hasOccupation,wd:Item (Occupation)
+hasOccupation,recordedAt,wd:Item (Event)
+hasOccupation,isDirectlyBasedOn,Reference
+wb:Item (Agent),hasAgeCategory,wb:Item (AgeCategory)
+hasAgeCategory,hasAge,xsd:int
+hasAgeCategory,isDirectlyBasedOn,Reference
+wb:Item (Agent),hasAge,xsd:int
+hasAge,hasAgeCategory,wb:Item (AgeCategory)
+hasAge,isDirectlyBasedOn,Reference
+wb:Item (Agent),participatesIn,wd:Item (Event)
+participatesIn,recordedAt,wd:Item (Event)
+participatesIn,hasTemporalExtent,wd:Item (TemporalExtent)
+participatesIn,isDirectlyBasedOn,Reference
+participatesIn,hasParticipationRoleType,wd:Item (ParticipationRoleCV)
+wb:Item (Agent),hasInterAgentRelationship,wd:Item (Agent)
+hasInterAgentRelationship,recordedAt,wd:Item (Event)
+hasInterAgentRelationship,isDirectlyBasedOn,Reference
+hasInterAgentRelationship,hasInterAgentRelationshipType,wd:Item (InterAgentRelationshipCV)
