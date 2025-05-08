@@ -1,1 +1,75 @@
-﻿
+p:hasName some (ps:hasName some xsd:string) SubClassOf: wb:Item(Agent)
+wdt:hasName some xsd:string SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:hasName only xsd:string
+p:recordedAt some (ps:recordedAt some wd:Item(Event)) SubClassOf: wd:hasName
+wdt:recordedAt some wd:Item(Event) SubClassOf: wd:hasName
+wd:hasName SubClassOf: wdt:recordedAt only wd:Item(Event)
+p:nameStructure some (ps:nameStructure some wd:Item(NameStructure)) SubClassOf: wd:hasName
+wdt:nameStructure some wd:Item(NameStructure) SubClassOf: wd:hasName
+wd:hasName SubClassOf: wdt:nameStructure only wd:Item(NameStructure)
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:hasName
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:hasName
+wd:hasName SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:hasSex some (ps:hasSex some wd:Item(SexType)) SubClassOf: wb:Item(Agent)
+wdt:hasSex some wd:Item(SexType) SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:hasSex only wd:Item(SexType)
+p:recordedAt some (ps:recordedAt some wd:Item(Event)) SubClassOf: wd:hasSex
+wdt:recordedAt some wd:Item(Event) SubClassOf: wd:hasSex
+wd:hasSex SubClassOf: wdt:recordedAt only wd:Item(Event)
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:hasSex
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:hasSex
+wd:hasSex SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:hasOccupation some (ps:hasOccupation some wd:Item(Occupation)) SubClassOf: wb:Item(Agent)
+wdt:hasOccupation some wd:Item(Occupation) SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:hasOccupation only wd:Item(Occupation)
+p:recordedAt some (ps:recordedAt some wd:Item(Event)) SubClassOf: wd:hasOccupation
+wdt:recordedAt some wd:Item(Event) SubClassOf: wd:hasOccupation
+wd:hasOccupation SubClassOf: wdt:recordedAt only wd:Item(Event)
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:hasOccupation
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:hasOccupation
+wd:hasOccupation SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:hasAgeCategory some (ps:hasAgeCategory some wd:Item(AgeCategory)) SubClassOf: wb:Item(Agent)
+wdt:hasAgeCategory some wd:Item(AgeCategory) SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:hasAgeCategory only wd:Item(AgeCategory)
+p:hasAge some (ps:hasAge some xsd:int) SubClassOf: wd:hasAgeCategory
+wdt:hasAge some xsd:int SubClassOf: wd:hasAgeCategory
+wd:hasAgeCategory SubClassOf: wdt:hasAge only xsd:int
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:hasAgeCategory
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:hasAgeCategory
+wd:hasAgeCategory SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:hasAge some (ps:hasAge some xsd:int) SubClassOf: wb:Item(Agent)
+wdt:hasAge some xsd:int SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:hasAge only xsd:int
+p:hasAgeCategory some (ps:hasAgeCategory some wb:Item(AgeCategory)) SubClassOf: wd:hasAge
+wdt:hasAgeCategory some wb:Item(AgeCategory) SubClassOf: wd:hasAge
+wd:hasAge SubClassOf: wdt:hasAgeCategory only wb:Item(AgeCategory)
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:hasAge
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:hasAge
+wd:hasAge SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:participatesIn some (ps:participatesIn some wd:Item(Event)) SubClassOf: wb:Item(Agent)
+wdt:participatesIn some wd:Item(Event) SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:participatesIn only wd:Item(Event)
+p:recordedAt some (ps:recordedAt some wd:Item(Event)) SubClassOf: wd:participatesIn
+wdt:recordedAt some wd:Item(Event) SubClassOf: wd:participatesIn
+wd:participatesIn SubClassOf: wdt:recordedAt only wd:Item(Event)
+p:hasTemporalExtent some (ps:hasTemporalExtent some wd:Item(TemporalExtent)) SubClassOf: wd:participatesIn
+wdt:hasTemporalExtent some wd:Item(TemporalExtent) SubClassOf: wd:participatesIn
+wd:participatesIn SubClassOf: wdt:hasTemporalExtent only wd:Item(TemporalExtent)
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:participatesIn
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:participatesIn
+wd:participatesIn SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:hasParticipationRoleType some (ps:hasParticipationRoleType some wd:Item(ParticipationRoleCV)) SubClassOf: wd:participatesIn
+wdt:hasParticipationRoleType some wd:Item(ParticipationRoleCV) SubClassOf: wd:participatesIn
+wd:participatesIn SubClassOf: wdt:hasParticipationRoleType only wd:Item(ParticipationRoleCV)
+p:hasInterAgentRelationship some (ps:hasInterAgentRelationship some wd:Item(Agent)) SubClassOf: wb:Item(Agent)
+wdt:hasInterAgentRelationship some wd:Item(Agent) SubClassOf: wb:Item(Agent)
+wb:Item(Agent) SubClassOf: wdt:hasInterAgentRelationship only wd:Item(Agent)
+p:recordedAt some (ps:recordedAt some wd:Item(Event)) SubClassOf: wd:hasInterAgentRelationship
+wdt:recordedAt some wd:Item(Event) SubClassOf: wd:hasInterAgentRelationship
+wd:hasInterAgentRelationship SubClassOf: wdt:recordedAt only wd:Item(Event)
+p:isDirectlyBasedOn some (ps:isDirectlyBasedOn some wd:Reference) SubClassOf: wd:hasInterAgentRelationship
+wdt:isDirectlyBasedOn some wd:Reference SubClassOf: wd:hasInterAgentRelationship
+wd:hasInterAgentRelationship SubClassOf: wdt:isDirectlyBasedOn only wd:Reference
+p:hasInterAgentRelationshipType some (ps:hasInterAgentRelationshipType some wd:Item(InterAgentRelationshipCV)) SubClassOf: wd:hasInterAgentRelationship
+wdt:hasInterAgentRelationshipType some wd:Item(InterAgentRelationshipCV) SubClassOf: wd:hasInterAgentRelationship
+wd:hasInterAgentRelationship SubClassOf: wdt:hasInterAgentRelationshipType only wd:Item(InterAgentRelationshipCV)
