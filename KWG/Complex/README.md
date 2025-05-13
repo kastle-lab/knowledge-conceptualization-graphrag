@@ -10,7 +10,7 @@
     * **Results/** — Directory containing evaluation results
 * **Schema/** — Directory containing KWG ontology schema
 
-# External Resources
+## External Resources
 Below is list of resources from which we obtained some of the contents of this repository:
 
 - [KWG schema diagram]()

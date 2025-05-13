@@ -8,6 +8,6 @@
 * `triple_nested_NEN_seperator.py` — Cleans triples for NEN represenation
 * `wbp-modlr.py` — Converts triples into axioms in Manchester Syntax (Enslaved Wikibase)
 
-# Acknowledgements
+## Acknowledgements
 
 We acknowledge Spencer Seals for providing the code we repurposed to generate the KWG-Lite axioms.
