@@ -13,5 +13,5 @@
 ## External Resources
 Below is list of resources from which we obtained some of the contents of this repository:
 
-- [KWG schema diagram]()
-- [KWG TTL file]()
+- KWG schema diagram extacted from the [KnowWhereGraph website](https://knowwheregraph.org/)
+- KWG TTL file extracted from the [KnowWhereGraph website](https://knowwheregraph.org/)
