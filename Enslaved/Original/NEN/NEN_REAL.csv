@@ -22,3 +22,24 @@ InterAgentRelationshipRecord,subClassOf,AgentRecord
 InterAgentRelationshipRecord,isRelationshipTo,Agent
 InterAgentRelationshipRecord,isRelationshipFrom,Agent
 InterAgentRelationshipRecord,hasInterAgentRelationshipType,InterAgentRelationshipTypes.txt
+AgentRecord,recordedAt,Event
+Event,subEventOf,Event
+Event,hasDescription,Description
+Event,hasExternalReference,ExternalReference
+Event,hasEventType,EventTypes.txt
+Event,hasName,xsd:string
+Event,hasTemporalExtent,TemporalExtent
+AgentRecord,hasTemporalExtent,TemporalExtent
+TemporalExtent,fallsWithin,Timespan
+Timespan,subClassOf,TemporalExtent
+TemporalExtent,startsAt,xsd:date
+TemporalExtent,endsAt,xsd:date
+TemporalExtent,occursBefore,xsd:date
+TemporalExtent,occursAfter,xsd:date
+TemporalExtent,contains,xsd:date
+Timespan,startsAt,xsd:date
+Timespan,endsAt,xsd:date
+AgentRecord,temporalExtentContains,xsd:date
+Agent,hasExternalReference,ExternalReference
+ExternalReference,refersTo,ExternalReferent (what?)
+ExternalReference,withID,xsd:string
