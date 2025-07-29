@@ -1,6 +1,6 @@
 # graph-rag-iswc-2025
 This repository contains structured data, scripts, and results of 'Knowledge Conceptualization Impacts RAG
-Efficacy' Research Paper aimed for ISWC 2025.
+Efficacy' Research.
 
 ## Directory and File Overview
 
