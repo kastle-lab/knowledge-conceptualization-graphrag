@@ -1,4 +1,4 @@
-# graph-rag-iswc-2025
+# Knowledge Conceptualization - GraphRAG Research
 This repository contains structured data, scripts, and results of 'Knowledge Conceptualization Impacts RAG
 Efficacy' Research.
 
